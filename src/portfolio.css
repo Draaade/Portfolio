@@ -12,9 +12,36 @@ a:visited {
   color: red;
 }
 
-
 #main {
   font-style:italic;
+  color:red;
+}
+
+#main a:hover {
+color: blue;
+font-weight:bold;
+}
+
+#main ul .selected{
+background-color:rgba(0,0,0,0.2);
+}
+
+.list-nav li{
+display:inline;
+list-style:none;
+padding: 2% 0 2% 0;
+}
+
+.row {
+display: flex;
+padding: 0.4% 0.5% 0.4% 0.5%;
+border: 2px dotted white; 
+}
+
+.column {
+flex: 50%;
+background-color:rgba(0,0,0,0.7);
+border: 1px solid white; 
 }
 
 #contact-wrapper {
@@ -50,7 +77,7 @@ a:visited {
   background-position: center;
   background-image: url("images/flower1.png");
   place-items: center;
-  width: 100%;
+  max-width:100%; height:auto;
   height:256px;
 }
 

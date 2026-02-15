@@ -8,7 +8,7 @@
   <meta name="description" content="a simple portfolio page">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <!-- check css file for comments -->
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="portfolio.css">
 </head>
 
 <body class="body">
@@ -25,8 +25,14 @@
 
   <div id="contact-wrapper">
   <nav id="main" class="nav">
-    <a href="index.html">Home</a> |
-    <a href="about.html">about</a><br>
+  <ul class="list-nav">
+    <li>
+      <a class="selected" href="index.html">Home</a> |
+    </li>
+    <li>
+      <a class="selected" href="about.html">about</a>
+    </li>
+  </ul>
   </nav>
     <p>
       contact info:
@@ -40,52 +46,77 @@
 
   <h1 class="section-title">Experience</h1>
 
+  <div>
+  <address>
+  Sarasota, FL 34237<br>
+  <a href="mailto:mailto:andradeisaac436@gmail.com">draaade.github.io/Portfolio</a>
+  </address>
+  I am working on my degree of <abbr title="Computer Programming and Analysis">Computer Programming and Analysis</abbr> 
+  </div> <!-- close wrapper -->
+
+  <div class="row">
+    <div class="column">
+      <h2>Education</h2>
+      <p>Computer Programming and Analysis (in progress).</p>
+    </div> <!-- column -->
+    <div class="column">
+      <h2>Projects</h2>
+      <p>Most of my projects are closed source. Please contact for more information. </p>
+      <p>I am currently working on making 2D-games in Java, using C++ for learning trading and 3D-games,
+      and use Lua for automating tasks, and I am currently learning OCaml by interest. </p>
+      <p>I am planning on learning other technologies like Zig, Golang, and Rust in the future. </p>
+    </div> <!-- column -->
+  </div> <!-- row --> 
+
   <p class="text-large">
     This page is to show the most <b>relevant</b> about me<br>
     <i>Who I am</i><br>
     My name is Bryant and I am very passionate about programming.
   </p>
 
-  <p class="section-header">Skills</p>
+  <h2 class="section-header">Skills</h2>
   <ul class="list-large">
     <li>C++</li>
     <li>Nim</li>
     <li>Java</li>
     <li>C#</li>
     <li>Lua</li>
-    <li>Linux/Unix</li>
+    <li>Linux/UNIX</li>
   </ul>
 
-  <p class="section-header">Technical experience</p>
+  <h2 class="section-header">Technical experience</h2>
 
-  <p class="text-large">coursework</p>
+  <p class="text-large">Coursework</p>
   <ul class="list-medium">
     <li>
       I have taken classes in general programming, information systems, and English.
     </li>
   </ul>
 
-  <p class="text-large">personal work</p>
+  <h2 class="text-large">Personal work</h2>
   <ul class="list-medium">
     <li>
-      I have experience in building applications in c++. I have experience in graphics frameworks
-      (mainly <a href="https://www.sfml-dev.org/">SFML</a>).
+      I have experience in building applications in C++. I have experience in graphics frameworks
+      (mainly <a href="https://www.sfml-dev.org/" target="_blank">SFML</a>).
     </li>
     <li>
-      I have experience with game frameworks with the programming languages java and c#.
+      I have experience with game frameworks with the programming languages Java and C#.
+    </li>
+    <li>
+      I've read books about C++, the books I've read are about Modern C++, Core Guidelines about writing code, and design. I am currently reading books about concurrency in C++.
     </li>
   </ul>
 
-  <p id="interest" class="section-header interest">
+  <h2 id="interest" class="section-header interest">
     Interest
     <svg width="95" height="90" class="star">
       <polygon points="50,5 20,86 90,38 5,39 80,86" />
     </svg>
-  </p>
+  </h2>
 
   <ul class="list-medium">
     <li>
-      The things I am most passionate about is writing coding and programming.
+      The things I am most passionate about are writing coding and programming.
     </li>
     <li>
       The areas of programming that interest me the most is graphics, low-latency applications and finance.
