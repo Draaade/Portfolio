@@ -22,8 +22,32 @@ color: blue;
 font-weight:bold;
 }
 
-#main ul .selected{
+#main ul .selected {
 background-color:rgba(0,0,0,0.2);
+}
+
+.responsive-nav {
+width:100%;
+text-align:center
+}
+
+.responsive-nav a {
+display:block;
+padding:1%;
+width:30%;
+text-decoration:none;
+}
+
+.responsive-nav {
+float:left;
+display:block;
+}
+
+@media only screen and (min-width:640px){
+.responsive-nav a {display:inline;}
+/* display:inline = left to right */
+.responsive-nav li {display:inline;
+}
 }
 
 .list-nav li{
@@ -46,7 +70,7 @@ border: 1px solid white;
 
 #contact-wrapper {
   background-color: rgba(0, 0, 0, 0.6);
-  width:50%;
+  width:70%;
   text-align:center;
   padding: 2px 5px;
 }
