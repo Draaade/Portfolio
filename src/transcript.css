@@ -1,7 +1,6 @@
 .body {
 height:1028px;
-background: #000000;
-background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(255, 0, 0, 0.33) 50%, rgba(0, 0, 0, 1) 100%);
+background: rgba(0,0,0,0.2);
 }
 
 a:link {
