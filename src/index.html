@@ -12,13 +12,17 @@
 </head>
 
 <body class="body">
-  
+<div class="body-wrapper">
+  <div class="byline">
+        <h2>Isaac's portfolio</h2>
+        Name: Bryant Andrade
+  </div>
+  <hr class="byline-divider">
   <header class="header">
-    Isaac's portfolio
       <div class="wrapper">
         <a href="#interest">
 	  <figure>
-  	    <img src="images/person-waving-icon1.png" alt="Hello" class="hello-icon">
+  	    <img src="images/person-waving-icon1.png" alt="Hello" class="hello-icon img-animation">
   	    <figcaption>Welcome to my page</figcaption>
 	  </figure>
         </a>
@@ -40,7 +44,7 @@
           <a class="selected" href=#main>Contact</a>
         </li>
         <li>
-          <a class="selected" href=#misc>More</a>
+          <a class="selected" href=#infobar>More</a>
         </li>
         <li>
           <a class="selected" href="transcript.html">Transcript</a>
@@ -59,26 +63,30 @@
 
   <!-- <h1 class="section-title">Experience</h1> -->
 	  
-  <div id="misc">
+  <div id="infobar" class="infobar">
   <address>
-  Sarasota, FL 34237<br>
-  <a href="mailto:mailto:andradeisaac436@gmail.com">draaade.github.io/Portfolio</a>
+  &nbsp;Sarasota, FL 34237<br>
+  <a href="mailto:mailto:andradeisaac436@gmail.com">&nbsp;draaade.github.io/Portfolio</a>
   </address>
-  I am working on my degree of <abbr title="Computer Programming and Analysis">Computer Programming and Analysis</abbr> 
+  &nbsp;I am working on my degree of <abbr title="Computer Programming and Analysis">Computer Programming and Analysis</abbr> 
   </div> <!-- close wrapper -->
 
   <div class="row">
     <div class="column">
+    <blockquote>
       <h2>Education</h2>
-      <p>Computer Programming and Analysis (in progress).</p>
+      Computer Programming and Analysis (in progress).
+    </blockquote>
     </div> <!-- column -->
 
     <div class="column">
-      <h2>Projects</h2>
-      <p>Most of my projects are closed source. Please contact for more information. </p>
-      <p>I am currently working on making 2D-games in Java, using C++ for learning trading and 3D-games,
-      and use Lua for automating tasks, and I am currently learning OCaml by interest. </p>
-      <p>I am planning on learning other technologies like Zig, Golang, and Rust in the future. </p>
+    <blockquote>
+        <h2>Projects</h2>
+        Most of my projects are closed source. Please contact for more information. 
+        I am currently working on making 2D-games in Java, using C++ for learning trading and 3D-games,
+        and use Lua for automating tasks, and I am currently learning OCaml by interest.
+        I am planning on learning other technologies like Zig, Golang, and Rust in the future.
+    </blockquote>
     </div> <!-- column -->
   </div> <!-- row --> 
 
@@ -88,26 +96,27 @@
     My name is Bryant and I am very passionate about programming.
   </p>
 
-<section class="images">
+<section class="images box">
 <figure class="programming-image">
-  <figcaption>C++</figcaption>
+  <figcaption class="box">C++</figcaption>
   <img src="images/C++1.png" alt="C++">
 </figure>
 <figure class="programming-image">
-  <figcaption>Java</figcaption>
+  <figcaption class="box">Java</figcaption>
   <img src="images/java1.png" alt="Java">
 </figure>
 <figure class="programming-image">
-  <figcaption>Lua</figcaption>
+  <figcaption class="box">Lua</figcaption>
   <img src="images/lua1.jpg" alt="Lua">
 </figure>
 <figure class="programming-image">
-  <figcaption>Ocaml</figcaption>
+  <figcaption class="box">Ocaml</figcaption>
   <img src="images/ocaml1.png" alt="Ocaml">
 </figure>
 </section>
 
   <h2 class="section-header">Skills</h2>
+  <hr class="divider">
   <ul class="list-large" id="custom-square-list">
     <li>C++</li>
     <li>Nim</li>
@@ -117,15 +126,15 @@
     <li>Linux/UNIX</li>
   </ul>
 
-  <h2 class="section-header">
-    Certifications
-  </h2>
+  <h2 class="section-header">Certifications</h2>
+  <hr class="divider">
   <dl class="list-medium">
     <dt>MOS(in progress)</dt>
     <dd>Microsoft Office Specialist (Word and Excel)</dd>
   </dl>
 
   <h2 class="section-header">Technical experience</h2>
+  <hr class="divider">
 
   <p class="text-large">Coursework</p>
   <ul class="list-medium">
@@ -134,7 +143,7 @@
     </li>
   </ul>
 
-  <h2 class="text-large">Personal work</h2>
+  <p class="text-large">Personal work</p>
   <ul class="list-medium">
     <li>
       I have experience in building applications in C++. I have experience in graphics frameworks
@@ -148,14 +157,15 @@
     </li>
   </ul>
 
-  <h2 id="interest" class="section-header interest">
+  <h2 id="interest" class="section-header interest rainbow-text">
     Interest
     <svg width="95" height="90" class="star">
       <polygon points="50,5 20,86 90,38 5,39 80,86" />
     </svg>
   </h2>
+  <hr class="divider">
 
-  <ul class="list-medium">
+  <ul class="list-medium custom-list">
     <li>
       The things I am most passionate about are writing coding and programming.
     </li>
@@ -170,6 +180,6 @@
     <span id="more-info"> For more info please contact me.</span>
     <a href="#main" class="footer-home">Home</a>
   </footer>
+</div>
 </body>
 </html>
-

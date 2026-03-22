@@ -3,12 +3,115 @@
   background-color: rgba(0, 0, 0, 1);
 }
 
+.infobar{
+    color:white;
+    font-family: Arial, sans-serif;
+    background-color: rgba(100,33,33,1); /* Light gray background */
+    padding: 10px;
+    border-radius: 15px; /* Rounded corners for a beveled look */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    white-space: nowrap; /* Prevents text from wrapping */
+        }
+        .infobar p {
+            margin-bottom: 0;
+            font-size: 16px;
+            color: #333;
+        }
+        .infobar  a {
+            text-decoration: none;
+            color: white; 
+            display: block;
+        }
+        .infobar  a:visited {
+            text-decoration: none;
+            color: white; 
+            display: block;
+        }
+        .infobar  a:link {
+            text-decoration: none;
+            color: white; 
+            display: block;
+        }
+        .infobar address {
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+	blockquote {
+            padding: 20px;
+            border-left: 4px solid #8B1537; /* Dark red line for emphasis */
+            background-color: rgba(33, 33, 33, 0.9); /* Light gray background with a slight transparency */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+	    text-align:justify;
+        }
+        blockquote :first-letter {
+            font-size: 2em; /* Larger size for the first letter */
+            float: left; /* Floats the first letter to the left */
+            margin-right: 0.1em; /* Space between the first letter and the rest of the text */
+            line-height: 1;
+	}
+.box {
+  border:2px;
+  border: 1px dotted red;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding:2px;
+}
+.rainbow-text {
+            font-size: 2em; /* Adjust the size as needed */
+            color: transparent; /* Start with a transparent background */
+            animation: rainbowText 5s linear infinite;
+        }
+
+        @keyframes rainbowText {
+            0%, 100% {
+                color: white; /* Initial color is transparent */
+            }
+            25% {
+                color: red;
+            }
+            50% {
+                color: orange;
+            }
+            75% {
+                color: yellow;
+            }
+            100% {
+                color: green;
+            }
+        }
+
+	 .img-animation {
+            width: 200px; /* Adjust the size as needed */
+            height: auto;
+            animation: filterChange 3s linear infinite alternate;
+        }
+
+        @keyframes filterChange {
+            0% {
+                filter: brightness(55%); /* No filter initially */
+            }
+            50% {
+                filter: brightness(100%);
+            }
+            100% {
+                filter: brightness(80%);
+            }
+        }
+.body-wrapper {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding-left:1%;
+  padding-right:1%;
+}
+
 figure{
 transform: scale(1);
 }
 
 figcaption {
-color: blue;
+color: red;
 }
 
 /* changes all the link colors in the whole page */
@@ -36,6 +139,8 @@ background-color:rgba(0,0,0,0.2);
 
 .images {
 display:inline-block;
+background-color:transparent;
+border: transparent;
 widht:auto;
 height:100px;
 }
@@ -45,6 +150,7 @@ width:100%;
 height:100%;
 }
 .programming-image figcaption{
+width:55%;
 }
 
 .programming-image img{
@@ -57,6 +163,8 @@ transform:scale(0.5);
   grid-template-columns: repeat(4,minmax(50%,1fr));
   grid-template-rows: repeat(2, auto);
   grid-auto-flow: column;
+  background-color:rgba(0, 0, 0, 0.3);
+  border: 1px dotted red;
   height: auto;
 }
 .programming-image {display:block; width:25%;}
@@ -69,6 +177,8 @@ transform:scale(0.5);
 .images {
   display:grid;
   grid-template-columns: repeat(4, minmax(100px, 1fr));
+  background-color:rgba(0, 0, 0, 0.3);
+  border: 1px dotted red;
   height: auto;
 }
 .programming-image {display:block; width:25%;}
@@ -146,7 +256,8 @@ border: 1px solid white;
   color: white;
   border: 2px dotted black;
   padding: 0;
-  background-image: url("images/shapes-repeating.jpg");
+  background-color:rgba(255,255,255,0.8);
+  /*background-image: url("images/shapes-repeating.jpg");*/
 }
 
 .header {
@@ -174,7 +285,7 @@ border: 1px solid white;
   display: grid;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("images/flower1.png");
+  /*background-image: url("images/flower1.png");*/
   place-items: center;
   max-width:100%; height:auto;
   height:256px;
@@ -186,10 +297,46 @@ border: 1px solid white;
   height: 7rem;
 }
 
-.divider {
+.byline-divider {
   width: 100%;
-  border: 3px solid white;
+  height: 13px;
+  margin: 5px 0;
+  background-color: #555;
+  border: none;
+  box-shadow: 0 0 10px rgba(200, 0, 0, 0.7);
+  border-radius: 10px;
 }
+
+!important .divider {
+  width: 100%;
+  height: 2px;
+  margin: 5px 0;
+  background-color: #fff;
+  border: none;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+.byline {
+            width: 75%;
+            margin: 0 auto; /* Centers the byline horizontally */
+            padding: 15px;
+            background-color: rgba(55, 55, 55, 0.8); /* Dark grey background with a slight transparency */
+            border-radius: 10px;
+	    text-align:center;
+        }
+
+        .byline h2 {
+            margin: 0; /* Remove paragraph spacing */
+            color: #fff; /* White text */
+            font-size: 1.5em; /* Larger font size for the title */
+            white-space: nowrap; /* Keeps the title on a single line */
+        }
+
+        .byline p {
+ 	    margin: 0 10px; /* Add space between name and date */
+            color: #ccc; /* Lighter gray text for the name */
+            font-size: 1em;
+            white-space: nowrap; /* Keeps the name on a single line */
+        }
 
 .section-title {
   color: white;
@@ -207,7 +354,6 @@ border: 1px solid white;
 }
 
 .section-header {
-  border-bottom: 2px solid white;
   font-size: 2rem;
 }
 
@@ -217,6 +363,13 @@ border: 1px solid white;
 
 .list-medium {
   font-size: 1.5rem;
+}
+
+ul {
+list-style-image: url("images/arrow2.png");
+}
+.list-medium.custom-list {
+list-style-image: url("images/arrow2.png");
 }
 
 .star polygon {
