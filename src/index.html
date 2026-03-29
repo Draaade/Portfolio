@@ -71,6 +71,89 @@
   &nbsp;I am working on my degree of <br> <abbr title="Computer Programming and Analysis">&nbsp;&nbsp;Computer Programming and Analysis</abbr> 
   </div> <!-- close wrapper -->
 
+  <section class="table-section">
+  <h2 class="table-section-title">Contact Form</h2>
+  <p class="table-text-large">Send me a message!</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th colspan="2">Contact Information</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="required">Name</td>
+        <td><input type="text" placeholder="Enter your name" class="input-field" required/></td>
+      </tr>
+      <tr>
+        <td class="required">Email</td>
+        <td><input type="email" placeholder="Enter your email" class="input-field" required/></td>
+      </tr>
+      <tr>
+        <td class="required">Subject</td>
+        <td><input type="text" placeholder="Enter subject" class="input-field" required/></td>
+      </tr>
+      <tr>
+        <td class="required">Message</td>
+        <td><textarea type="text" rows="4" placeholder="Enter your message" class="input-field"></textarea></td>
+      </tr>
+      <tr>
+        <td>City</td>
+        <td><input type="text" placeholder="Enter your city" class="input-field" /></td>
+      </tr>
+      <tr>
+        <td>Zip</td>
+        <td><input type="text" placeholder="Enter your zip code" class="input-field" /></td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align: center;">
+          <button type="submit" onclick="showMessage()">Send Message</button>
+          <button type="button" onclick="resetForm()">Reset</button>
+        </td>
+	<script>
+    function showMessage() {
+      const requiredInputs = document.querySelectorAll('input[required], textarea[required]');
+      const messageTextarea = document.querySelector('textarea.input-field');
+      let hasEmptyRequired = false;
+
+      requiredInputs.forEach(input => {
+        if (!input.value.trim()) {
+          hasEmptyRequired = true;
+        }
+      });
+	if (!messageTextarea.value.trim()) {
+	alert("Please enter a message.");
+        return;
+	}
+      if (hasEmptyRequired) {
+        alert("Please fill in all required fields before sending.");
+      } else {
+     	document.getElementById("message").classList.add("show");
+        // You can trigger actual message sending here
+      }
+    }
+
+    function resetForm() {
+	document.querySelector("input[type='email']").value = "";
+	document.getElementById("message").classList.remove("show");
+	const textFields = document.querySelectorAll('input[type="text"], textarea');
+	    textFields.forEach(field => {
+		    field.value = "";  // Clear all text fields
+	    });
+	const textInputs = document.querySelectorAll('input[type="text"]');
+	    textInputs.forEach(input => {
+		    input.value = "";  // Clears the value
+	    });
+    }
+  </script>
+      </tr>
+    </tbody>
+  </table>
+	<div id="message" class="reset-trigger">
+      		Message sent!
+	</div>
+</section>
   <div class="row">
     <div class="column">
     <blockquote>
@@ -159,9 +242,12 @@
 
   <h2 id="interest" class="section-header interest rainbow-text">
     Interest
+  <div class="star">
     <svg width="95" height="90" class="star">
-      <polygon points="50,5 20,86 90,38 5,39 80,86" />
+      <polygon points="50,5 20,86 90,38 5,39 80,86"
+        fill="currentColor"/>
     </svg>
+  </div>
   </h2>
   <hr class="divider">
 
